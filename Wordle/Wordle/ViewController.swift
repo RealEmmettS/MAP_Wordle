@@ -50,11 +50,14 @@ class ViewController: UIViewController {
                 ///Temporary variable to hold the user's new guess. Only for use in the guessSubmitted IBAction function.
                 let newGuess = guess(word: textField.text!)
                 addGuess(newGuess)
+                progress += 1
                 print(newGuess)
             }else{
                 print("That word is not valid")
             }
         }
+        
+        textField.text = ""
         
     }//end IBAction 'guessSubmitted'
     
@@ -71,6 +74,11 @@ class ViewController: UIViewController {
             [41,42,43,44,45],
             [51,52,53,54,55]
         ]
+        
+        let testLabel = self.view.viewWithTag(tags[4][4]) as? UILabel
+        if testLabel?.text != "" && testLabel?.text != nil && testLabel?.text != " "{
+            submitButton.isEnabled = false; for tag in row{ let tmpLabel = self.view.viewWithTag(tag) as? UILabel; tmpLabel?.backgroundColor = .red};return
+        }
         
         row = tags[progress]
         
@@ -94,7 +102,6 @@ class ViewController: UIViewController {
         }
         
         
-        progress += 1
     }
     
 }//end ViewController.swift

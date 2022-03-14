@@ -26,10 +26,17 @@ extension UIViewController {
 extension String{
     
     func isReal() -> Bool {
-        let checker = UITextChecker()
-        let range = NSRange(location: 0, length: self.utf16.count)
-        let misspelledRange = checker.rangeOfMisspelledWord(in: self, range: range, startingAt: 0, wrap: false, language: "en")
-        return misspelledRange.location == NSNotFound
+        
+        if self.count != 5{
+            return false
+        }
+        
+        for word in allWords{
+            if self.lowercased() == word.lowercased(){
+                return true
+            }
+        }
+        return false
     }
     
 }//end 'extension String'
