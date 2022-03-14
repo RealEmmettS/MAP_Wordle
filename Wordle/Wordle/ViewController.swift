@@ -5,11 +5,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var deadLettersLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var restartAppWarning: UILabel!
     
     //MARK: viewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        restartAppWarning.isHidden = true
+        
     }
     
     //MARK: -Tags
@@ -28,6 +31,8 @@ class ViewController: UIViewController {
     //MARK: viewWillAppear()
     override func viewWillAppear(_ animated: Bool) {
         
+        restartAppWarning.isHidden = true
+        
         for row in tags {
             for tag in row{
                 let tmpLabel = self.view.viewWithTag(tag) as? UILabel
@@ -44,6 +49,7 @@ class ViewController: UIViewController {
     @IBAction func guessSubmitted(_ sender: Any) {
         
         //check if the texfield has a value
+        textField.text = textField.text?.removeSpecialChars()
         if textField.text != "" && textField.text != nil{
             //checks the submitted word against the list of all actual words
             if textField.text!.isReal() && textField.text!.count >= 5{
@@ -61,7 +67,7 @@ class ViewController: UIViewController {
         
     }//end IBAction 'guessSubmitted'
     
-    //MARK: Display Guess on Table
+    //MARK: - Display Guess on Table
     func addGuess(_ userGuess: guess){
         var row:[Int] = []
         
@@ -87,18 +93,34 @@ class ViewController: UIViewController {
             let tmpLabel = self.view.viewWithTag(tag) as? UILabel
             tmpLabel?.text = userGuess.getChars()[count].uppercased()
             
-            //Highlights a cell yellow if the letter is in the word, but no the correct spot
+            //MARK: Yellow Letters
+            //Highlights a cell yellow if the letter is in the word, but not in the correct spot
             if word.lowercased().getChars().contains(userGuess.getChars()[count].lowercased()){tmpLabel?.backgroundColor = yellowColor}
-                        
+                     
+            //MARK: Green Letters
             //Highlights a cell green if the letter is in the word and in the correct spot
-            if userGuess.getChars()[count].lowercased() == word.getChars()[count].lowercased(){tmpLabel?.backgroundColor = greenColor };count += 1}
+            if userGuess.getChars()[count].lowercased() == word.getChars()[count].lowercased(){tmpLabel?.backgroundColor = greenColor }
+            
+            //MARK: Dead Letters
+            if !word.getChars().contains(userGuess.getChars()[count].lowercased()) {
+                if !deadLetters.contains(userGuess.getChars()[count].lowercased()){
+                    deadLetters.append(userGuess.getChars()[count].lowercased());
+                }
+            }
+            ;count += 1
+        }
+        var deadString = ""
+        for letter in deadLetters{
+            deadString.append("\(letter) ")
+        }
+        deadLettersLabel.text = "Dead Letters: \(deadString)"
         
         
         if userGuess.word.lowercased() == word.lowercased(){
             for tag in row{
                 let tmpLabel = self.view.viewWithTag(tag) as? UILabel
                 tmpLabel?.backgroundColor = greenColor
-            }; submitButton.isEnabled = false
+            }; submitButton.isEnabled = false; textField.isEnabled = false; restartAppWarning.isHidden = false
         }
         
         

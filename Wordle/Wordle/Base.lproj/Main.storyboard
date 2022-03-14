@@ -236,8 +236,8 @@
                                 <color key="textColor" red="0.17950707669999999" green="0.2030345798" blue="0.2528765798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mei-gi-vED">
-                                <rect key="frame" x="21" y="703" width="374" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mei-gi-vED">
+                                <rect key="frame" x="20" y="703" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Submit Guess">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -254,6 +254,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please restart the app for a new word." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7a-GE-opr">
+                                <rect key="frame" x="64" y="764" width="286" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -263,6 +269,7 @@
                             <constraint firstItem="R2Y-FI-mEd" firstAttribute="top" secondItem="7c1-br-Qyw" secondAttribute="bottom" constant="113" id="H4c-Kj-tf9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2I9-O7-pgP" secondAttribute="trailing" constant="20" id="NoQ-JO-G4P"/>
                             <constraint firstItem="R2Y-FI-mEd" firstAttribute="top" secondItem="zud-dW-4CG" secondAttribute="bottom" constant="8" symbolic="YES" id="Qgt-jf-ydq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K7a-GE-opr" secondAttribute="trailing" constant="64" id="Tla-18-drM"/>
                             <constraint firstItem="2I9-O7-pgP" firstAttribute="top" secondItem="7c1-br-Qyw" secondAttribute="bottom" constant="40" id="WRK-Mu-RKR"/>
                             <constraint firstItem="7c1-br-Qyw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="Ysp-lg-abu"/>
                             <constraint firstItem="zud-dW-4CG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="c8V-K1-aH9"/>
@@ -272,11 +279,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mei-gi-vED" secondAttribute="trailing" constant="20" id="leW-Lm-a2s"/>
                             <constraint firstItem="mei-gi-vED" firstAttribute="top" secondItem="R2Y-FI-mEd" secondAttribute="bottom" constant="8" symbolic="YES" id="mD0-Yh-3U4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7c1-br-Qyw" secondAttribute="bottom" constant="314" id="s83-Fu-pUN"/>
+                            <constraint firstItem="K7a-GE-opr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="yG9-FW-vGa"/>
+                            <constraint firstItem="K7a-GE-opr" firstAttribute="top" secondItem="mei-gi-vED" secondAttribute="bottom" constant="30" id="z7L-2m-dAd"/>
                             <constraint firstItem="mei-gi-vED" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zTc-PP-h40"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="deadLettersLabel" destination="zud-dW-4CG" id="Gxh-fu-MJW"/>
+                        <outlet property="deadLettersLabel" destination="zud-dW-4CG" id="mB7-4j-NJV"/>
+                        <outlet property="restartAppWarning" destination="K7a-GE-opr" id="6fJ-A7-4B4"/>
                         <outlet property="submitButton" destination="mei-gi-vED" id="phk-XK-0gG"/>
                         <outlet property="textField" destination="R2Y-FI-mEd" id="PUB-5r-W8t"/>
                     </connections>

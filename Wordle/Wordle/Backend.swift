@@ -9,6 +9,15 @@ import Foundation
 
 var word: String = ""
 
+var deadLetters:[String] = []{
+    didSet{
+        //print("Newest letter: \(deadLetters.last!)")
+        //print(deadLetters.uniqued())
+        deadLetters = deadLetters.uniqued()
+    }
+}
+
+
 func pickNewWord(){
     let max = wordList.count
     
@@ -16,7 +25,7 @@ func pickNewWord(){
     let randomInt = Int.random(in: 0..<max)
     
     word = wordList[randomInt]
-    print(word)
+    print("Word: \(word)")
 }
 
 extension String{

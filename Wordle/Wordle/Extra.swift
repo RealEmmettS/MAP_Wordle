@@ -39,4 +39,20 @@ extension String{
         return false
     }
     
+    
+    func removeSpecialChars() -> String {
+        let allowedChars : Set<Character> =
+            Set("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLKMNOPQRSTUVWXYZ")
+        return String(self.filter {allowedChars.contains($0) })
+    }
+    
 }//end 'extension String'
+
+
+//https://stackoverflow.com/a/25739498
+extension Sequence where Element: Hashable {
+    func uniqued() -> [Element] {
+        var set = Set<Element>()
+        return filter { set.insert($0).inserted }
+    }
+}
