@@ -6,6 +6,10 @@
 //
 
 import Foundation
+import UIKit
+import AVFoundation
+import AVKit
+import AVFAudio
 
 var word: String = ""
 
@@ -39,5 +43,25 @@ extension String{
         
         return characters
     }//end initialize()
+    
+}
+
+//MARK: Play Video
+extension ViewController{
+    
+    func playVideo() {
+            guard let path = Bundle.main.path(forResource: "Wordle_2_intro_video", ofType:"mp4") else {
+                debugPrint("Wordle_2_intro_video.mp4 not found")
+                return
+            }
+            let player = AVPlayer(url: URL(fileURLWithPath: path))
+            let playerController = AVPlayerViewController()
+            playerController.player = player
+            playerController.showsPlaybackControls = false
+            playerController.exitsFullScreenWhenPlaybackEnds = true
+            present(playerController, animated: true) {
+                player.play()
+            }
+        }
     
 }

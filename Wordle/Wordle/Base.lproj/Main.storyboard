@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GeliatExtrabold-ywGYd.otf">
+            <string>Geliat-ExtraBold</string>
+        </array>
+        <array key="PPEditorialNew-Regular.otf">
+            <string>PPEditorialNew-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -24,35 +32,35 @@
                                             <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWu-iM-78g">
                                                 <rect key="frame" x="0.0" y="0.0" width="71" height="77"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvo-6s-rba">
                                                 <rect key="frame" x="76" y="0.0" width="70.5" height="77"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84p-o5-4RF">
                                                 <rect key="frame" x="151.5" y="0.0" width="71" height="77"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSZ-g9-UBI">
                                                 <rect key="frame" x="227.5" y="0.0" width="70.5" height="77"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zq-Ke-hKz">
                                                 <rect key="frame" x="303" y="0.0" width="71" height="77"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -62,37 +70,37 @@
                                         <rect key="frame" x="0.0" y="97" width="374" height="77.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="21" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yl-VK-8GP">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="77.5"/>
+                                                <rect key="frame" x="0.0" y="6.5" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEO-jk-yBD">
-                                                <rect key="frame" x="76" y="0.0" width="70.5" height="77.5"/>
+                                                <rect key="frame" x="76" y="6.5" width="70.5" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="23" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtO-pB-8OM">
-                                                <rect key="frame" x="151.5" y="0.0" width="71" height="77.5"/>
+                                                <rect key="frame" x="151.5" y="6.5" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="24" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyu-zU-afD">
-                                                <rect key="frame" x="227.5" y="0.0" width="70.5" height="77.5"/>
+                                                <rect key="frame" x="227.5" y="6.5" width="70.5" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="25" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIV-NN-Zo5">
-                                                <rect key="frame" x="303" y="0.0" width="71" height="77.5"/>
+                                                <rect key="frame" x="303" y="6.5" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -102,37 +110,37 @@
                                         <rect key="frame" x="0.0" y="194.5" width="374" height="77"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="31" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yF-MP-iuI">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="77"/>
+                                                <rect key="frame" x="0.0" y="6" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="32" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwg-1L-tfm">
-                                                <rect key="frame" x="76" y="0.0" width="70.5" height="77"/>
+                                                <rect key="frame" x="76" y="6" width="70.5" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="33" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bQ-Jc-bqk">
-                                                <rect key="frame" x="151.5" y="0.0" width="71" height="77"/>
+                                                <rect key="frame" x="151.5" y="6" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="34" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRj-Rm-DHd">
-                                                <rect key="frame" x="227.5" y="0.0" width="70.5" height="77"/>
+                                                <rect key="frame" x="227.5" y="6" width="70.5" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="35" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRU-tl-AIO">
-                                                <rect key="frame" x="303" y="0.0" width="71" height="77"/>
+                                                <rect key="frame" x="303" y="6" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -142,37 +150,37 @@
                                         <rect key="frame" x="0.0" y="291.5" width="374" height="77.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="41" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37U-95-GKb">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="77.5"/>
+                                                <rect key="frame" x="0.0" y="6" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="42" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBb-lm-0Mr">
-                                                <rect key="frame" x="76" y="0.0" width="70.5" height="77.5"/>
+                                                <rect key="frame" x="76" y="6" width="70.5" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="43" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItC-j2-bGj">
-                                                <rect key="frame" x="151.5" y="0.0" width="71" height="77.5"/>
+                                                <rect key="frame" x="151.5" y="6" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="44" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXl-N7-1Xp">
-                                                <rect key="frame" x="227.5" y="0.0" width="70.5" height="77.5"/>
+                                                <rect key="frame" x="227.5" y="6" width="70.5" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="45" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8C4-Gh-dzX">
-                                                <rect key="frame" x="303" y="0.0" width="71" height="77.5"/>
+                                                <rect key="frame" x="303" y="6" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -182,37 +190,37 @@
                                         <rect key="frame" x="0.0" y="389" width="374" height="77"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="51" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5V-2e-d3u">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="77"/>
+                                                <rect key="frame" x="0.0" y="6" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="52" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG0-En-WHx">
-                                                <rect key="frame" x="76" y="0.0" width="70.5" height="77"/>
+                                                <rect key="frame" x="76" y="6" width="70.5" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="53" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTe-16-NGf">
-                                                <rect key="frame" x="151.5" y="0.0" width="71" height="77"/>
+                                                <rect key="frame" x="151.5" y="6" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="54" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YT6-r3-Ok5">
-                                                <rect key="frame" x="227.5" y="0.0" width="70.5" height="77"/>
+                                                <rect key="frame" x="227.5" y="6" width="70.5" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="55" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9na-oQ-a7h">
-                                                <rect key="frame" x="303" y="0.0" width="71" height="77"/>
+                                                <rect key="frame" x="303" y="6" width="71" height="65"/>
                                                 <color key="backgroundColor" red="0.8461850286" green="0.86990720030000002" blue="0.91559016699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="65"/>
+                                                <fontDescription key="fontDescription" name="Geliat-ExtraBold" family="Geliat" pointSize="55"/>
                                                 <color key="textColor" red="0.23030793669999999" green="0.2576085031" blue="0.32403910159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -231,15 +239,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dead Letters: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zud-dW-4CG">
-                                <rect key="frame" x="20" y="629" width="120.5" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <rect key="frame" x="20" y="629" width="114" height="24"/>
+                                <fontDescription key="fontDescription" name="PPEditorialNew-Regular" family="PP Editorial New" pointSize="20"/>
                                 <color key="textColor" red="0.17950707669999999" green="0.2030345798" blue="0.2528765798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mei-gi-vED">
-                                <rect key="frame" x="20" y="703" width="374" height="31"/>
+                                <rect key="frame" x="20" y="703" width="374" height="34.5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Submit Guess">
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Submit Guess">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="PPEditorialNew-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
@@ -247,16 +264,16 @@
                                     <action selector="guessSubmitted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jeW-ky-XAZ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R2Y-FI-mEd">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adieu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R2Y-FI-mEd">
                                 <rect key="frame" x="20" y="661" width="374" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.20392156859999999" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="PPEditorialNew-Regular" family="PP Editorial New" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please restart the app for a new word." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7a-GE-opr">
-                                <rect key="frame" x="64" y="764" width="286" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <rect key="frame" x="64" y="767.5" width="286" height="20.5"/>
+                                <fontDescription key="fontDescription" name="PPEditorialNew-Regular" family="PP Editorial New" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

@@ -1,18 +1,32 @@
 import UIKit
-class ViewController: UIViewController {
+import AVFAudio
+import AVFoundation
+import AVKit
+
+class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     //MARK: IBOutlets
     @IBOutlet weak var deadLettersLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var restartAppWarning: UILabel!
+    var didPlayVideo:Bool = false
     
     //MARK: viewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         restartAppWarning.isHidden = true
+        didPlayVideo = false
         
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if !didPlayVideo{
+            playVideo()
+            didPlayVideo = true
+        }
     }
     
     //MARK: -Tags
@@ -32,6 +46,8 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         restartAppWarning.isHidden = true
+        
+        submitButton.titleLabel?.font =  UIFont(name: "PP Editorial New", size: 20)
         
         for row in tags {
             for tag in row{
