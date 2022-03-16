@@ -97,17 +97,21 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             [51,52,53,54,55]
         ]
         
+        //MARK: Done Guessing?
         let testLabel = self.view.viewWithTag(tags[4][4]) as? UILabel
         if testLabel?.text != "" && testLabel?.text != nil && testLabel?.text != " "{
-            submitButton.isEnabled = false; for tag in row{ let tmpLabel = self.view.viewWithTag(tag) as? UILabel; tmpLabel?.backgroundColor = .red};return
+            submitButton.isEnabled = false; textField.isEnabled = false; restartAppWarning.isHidden = false; for tag in row{ let tmpLabel = self.view.viewWithTag(tag) as? UILabel; tmpLabel?.backgroundColor = .red};return
         }
         
         row = tags[progress]
         
-        var count = 0
+        var count:Int = 0
+        var won:Bool = false
         for tag in row{
+            //Displays the word on the table
             let tmpLabel = self.view.viewWithTag(tag) as? UILabel
             tmpLabel?.text = userGuess.getChars()[count].uppercased()
+            
             
             //MARK: Yellow Letters
             //Highlights a cell yellow if the letter is in the word, but not in the correct spot
@@ -115,7 +119,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
                      
             //MARK: Green Letters
             //Highlights a cell green if the letter is in the word and in the correct spot
-            if userGuess.getChars()[count].lowercased() == word.getChars()[count].lowercased(){tmpLabel?.backgroundColor = greenColor }
+            if userGuess.getChars()[count].lowercased() == word.getChars()[count].lowercased(){tmpLabel?.backgroundColor = greenColor; }
             
             //MARK: Dead Letters
             if !word.getChars().contains(userGuess.getChars()[count].lowercased()) {
@@ -136,8 +140,14 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             for tag in row{
                 let tmpLabel = self.view.viewWithTag(tag) as? UILabel
                 tmpLabel?.backgroundColor = greenColor
-            }; submitButton.isEnabled = false; textField.isEnabled = false; restartAppWarning.isHidden = false
+            }; submitButton.isEnabled = false; textField.isEnabled = false; restartAppWarning.isHidden = false; won = true
         }
+        
+        if testLabel?.text != "" && testLabel?.text != nil && testLabel?.text != " " && !won{
+            submitButton.isEnabled = false; textField.isEnabled = false; restartAppWarning.isHidden = false; for tag in row{ let tmpLabel = self.view.viewWithTag(tag) as? UILabel; tmpLabel?.backgroundColor = .red};return
+        }
+        
+        
         
         
     }

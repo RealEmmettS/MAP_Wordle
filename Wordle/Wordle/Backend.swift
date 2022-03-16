@@ -47,21 +47,28 @@ extension String{
 }
 
 //MARK: Play Video
-extension ViewController{
+extension ViewController {
     
     func playVideo() {
-            guard let path = Bundle.main.path(forResource: "Wordle_2_intro_video", ofType:"mp4") else {
-                debugPrint("Wordle_2_intro_video.mp4 not found")
-                return
-            }
-            let player = AVPlayer(url: URL(fileURLWithPath: path))
-            let playerController = AVPlayerViewController()
-            playerController.player = player
-            playerController.showsPlaybackControls = false
-            playerController.exitsFullScreenWhenPlaybackEnds = true
-            present(playerController, animated: true) {
-                player.play()
-            }
+        guard let path = Bundle.main.path(forResource: "Wordle_2_intro_video", ofType:"mp4") else {
+            debugPrint("Wordle_2_intro_video.mp4 not found")
+            return
         }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        playerController.showsPlaybackControls = false
+        playerController.exitsFullScreenWhenPlaybackEnds = true
+        present(playerController, animated: true) {
+            player.play()
+        }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerController.player!.currentItem)
+    }
+    
+    @objc func playerDidFinishPlaying(note:NSNotification){
+        print("finished")
+        dismiss(animated: true, completion: nil)
+    }
     
 }
