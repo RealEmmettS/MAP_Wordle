@@ -11,6 +11,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var restartAppWarning: UILabel!
     var didPlayVideo:Bool = false
+    @IBOutlet weak var scoreLabel: UILabel!
     
     //MARK: viewDidLoad()
     override func viewDidLoad() {
@@ -21,7 +22,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
-    
+    //MARK: viewDidAppear()
     override func viewDidAppear(_ animated: Bool) {
         if !didPlayVideo{
             playVideo()
@@ -48,6 +49,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         restartAppWarning.isHidden = true
         
         submitButton.titleLabel?.font =  UIFont(name: "PP Editorial New", size: 20)
+        
+        scoreLabel.text = "\(score)"
         
         for row in tags {
             for tag in row{
@@ -85,6 +88,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     //MARK: - Display Guess on Table
     func addGuess(_ userGuess: guess){
+        
         var row:[Int] = []
         
         
@@ -106,7 +110,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         row = tags[progress]
         
         var count:Int = 0
-        var won:Bool = false
+        var won:Bool = false {
+            didSet{
+                if won == true{
+                    score += 1; scoreLabel.text = "\(score)"
+                }
+            }
+        }
         for tag in row{
             //Displays the word on the table
             let tmpLabel = self.view.viewWithTag(tag) as? UILabel
@@ -116,7 +126,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             //MARK: Yellow Letters
             //Highlights a cell yellow if the letter is in the word, but not in the correct spot
             if word.lowercased().getChars().contains(userGuess.getChars()[count].lowercased()){tmpLabel?.backgroundColor = yellowColor}
-                     
+            
             //MARK: Green Letters
             //Highlights a cell green if the letter is in the word and in the correct spot
             if userGuess.getChars()[count].lowercased() == word.getChars()[count].lowercased(){tmpLabel?.backgroundColor = greenColor; }
@@ -135,7 +145,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
         deadLettersLabel.text = "Dead Letters: \(deadString)"
         
-        
+        //MARK: Correct Guess
         if userGuess.word.lowercased() == word.lowercased(){
             for tag in row{
                 let tmpLabel = self.view.viewWithTag(tag) as? UILabel

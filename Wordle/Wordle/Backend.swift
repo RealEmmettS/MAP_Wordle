@@ -12,6 +12,11 @@ import AVKit
 import AVFAudio
 
 var word: String = ""
+var score = UserDefaults.standard.integer(forKey: "score") {
+    didSet{
+        UserDefaults.standard.set(score, forKey: "score")
+    }
+}
 
 var deadLetters:[String] = []{
     didSet{
