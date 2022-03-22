@@ -104,7 +104,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         //MARK: Done Guessing?
         let testLabel = self.view.viewWithTag(tags[4][4]) as? UILabel
         if testLabel?.text != "" && testLabel?.text != nil && testLabel?.text != " "{
-            submitButton.isEnabled = false; textField.isEnabled = false; restartAppWarning.isHidden = false; for tag in row{ let tmpLabel = self.view.viewWithTag(tag) as? UILabel; tmpLabel?.backgroundColor = .red};return
+            deadLettersLabel.text = "Word: \(word.uppercased())"; textField.isEnabled = false; restartAppWarning.isHidden = false; for tag in row{ let tmpLabel = self.view.viewWithTag(tag) as? UILabel; tmpLabel?.backgroundColor = .red};return
         }
         
         row = tags[progress]
@@ -154,7 +154,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
         
         if testLabel?.text != "" && testLabel?.text != nil && testLabel?.text != " " && !won{
-            submitButton.isEnabled = false; textField.isEnabled = false; restartAppWarning.isHidden = false; for tag in row{ let tmpLabel = self.view.viewWithTag(tag) as? UILabel; tmpLabel?.backgroundColor = .red};return
+            deadLettersLabel.text = "The word was: \(word.uppercased())"; submitButton.setTitle("\(word.uppercased())!", for: .disabled); submitButton.isEnabled = false; textField.isEnabled = false; restartAppWarning.isHidden = false; for tag in row{ let tmpLabel = self.view.viewWithTag(tag) as? UILabel; tmpLabel?.backgroundColor = .red};return
         }
         
         
